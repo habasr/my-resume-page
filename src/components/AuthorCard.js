@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 
-export default function AuthorCard() {
+
+export function AuthorCard({ setIsActive, isActive }) {
+
+
+    function handleActive(e) {
+        e.preventDefault();
+
+        setIsActive({
+            active: true,
+            name: e.target.id
+        })
+    }
     return (
         <>
             <div id="intro" className="bg-[#
@@ -10,12 +21,16 @@ export default function AuthorCard() {
                 </div>
                 <div id="content" className="prose lg:prose-xl px-2">
                     <h1 className="text-center text-gray-800 text-4xl capitalize font-medium">S. Abel Haba</h1>
-                    <small className="text-center block text-md text-gray-800">Writer, Teacher &amp; Software Engineer</small>
-                    <p className="text-justify text-lg text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Veritatis vero voluptates vitae rerum eos non laboriosam deleniti voluptatibus ipsum blanditiis
-                        expedita architecto tempore necessitatibus quisquam vel ipsam corporis, nemo repudiandae. Lorem, ipsum
-                        dolor sit amet consectetur adipisicing elit. Modi asperiores, amet omnis inventore aliquid nam. Autem
-                        obcaecati ut ipsa rem temporibus nostrum, quibusdam optio, itaque culpa ad impedit aperiam quasi.</p>
+                    <small className="text-center block text-md text-gray-800">Designer, Teacher &amp; Software Engineer</small>
+                    <p className="text-justify text-lg text-gray-800">Freelance Web Designer & Developer based in Ganta, Nimba County, Liberia.
+                        Highly experienced in designing & developing custom Wordpress websites..</p>
+                    <div id="hero-nav" className="p-6 mx-auto max-w-full">
+                        <ul className="flex items-center justify-center mx-4 gap-4">
+                            <li className="border-[#B2B2B2] border p-2 rounded-lg"><a href="#education" id="education" onClick={handleActive} className={`${(isActive.active && isActive.name === 'education') && 'font-bold'} font-lato text-xl`}>Education</a></li>
+                            <li className="border-[#B2B2B2] border rounded-lg p-2"><a href="#work" id="work" onClick={handleActive} className={`${(isActive.active && isActive.name === 'work') && 'font-bold'} font-lato text-xl`}>Work</a></li>
+                            <li className="border-[#B2B2B2] border rounded-lg p-2"><a href="#hobbies" id="hobbies" onClick={handleActive} className={`${(isActive.active && isActive.name === 'hobbies') && 'font-bold'} font-lato text-xl`}>Hobbies</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </>
