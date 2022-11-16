@@ -73,7 +73,7 @@ export function Navbar() {
                       font-medium
                       text-gray-900
                     ">Projects</Link>
-                                    <a href="#" className="
+                                    <Link to={"/blog/index"} className="
                       inline-flex
                       items-center
                       border-b-2 border-transparent
@@ -83,8 +83,8 @@ export function Navbar() {
                       font-medium
                       text-gray-500
                       hover:border-gray-300 hover:text-gray-700
-                    ">Blog</a>
-                                    <a href="#" className="
+                    ">Blog</Link>
+                                    <Link to={"/contact"} className="
                       inline-flex
                       items-center
                       border-b-2 border-transparent
@@ -94,7 +94,7 @@ export function Navbar() {
                       font-medium
                       text-gray-500
                       hover:border-gray-300 hover:text-gray-700
-                    ">Contact</a>
+                    ">Contact</Link>
                                 </div>
                             </div>
                             <div className="
@@ -124,7 +124,7 @@ export function Navbar() {
                   font-medium
                   text-indigo-700
                 ">Projects</Link>
-                            <a href="#" className="
+                            <Link to={"/blog/index"} className="
                   block
                   border-l-4 border-transparent
                   py-2
@@ -134,8 +134,8 @@ export function Navbar() {
                   font-medium
                   text-gray-500
                   hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700
-                ">Blog</a>
-                            <a href="#" className="
+                ">Blog</Link>
+                            <Link to={"/contact"} className="
                   block
                   border-l-4 border-transparent
                   py-2
@@ -145,7 +145,7 @@ export function Navbar() {
                   font-medium
                   text-gray-500
                   hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700
-                ">Contact</a>
+                ">Contact</Link>
                         </div>
                     </div>
                 </nav>

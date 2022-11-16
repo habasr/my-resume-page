@@ -9,14 +9,24 @@ import {
     Route,
   } from "react-router-dom";
   import { Projects } from './routes/projects';
+  import { Contact } from './routes/contact';
+  import { Blog } from './routes/blog/index';
   const router = createBrowserRouter([
     {
       path: "/",
       element: <App />,
     },
     {
-      path: "/",
+      path: "/projects",
       element: <Projects />,
+    },
+    {
+      path: "/contact",
+      element: <Contact />,
+    },
+    {
+      path: "/blog/index",
+      element: <Blog />,
     },
   ]);
 
