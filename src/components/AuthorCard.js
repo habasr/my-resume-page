@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import image from "../routes/images/abel.jpeg"
 
 export function AuthorCard({ setIsActive, isActive }) {
 
@@ -17,7 +17,7 @@ export function AuthorCard({ setIsActive, isActive }) {
             <div id="intro" className="bg-[#
             3EAEAEA] h-auto my-6 py-8 rounded-lg border-4">
                 <div id="avatar" className="flex justify-center py-2">
-                    <img className="w-40" src="https://api.multiavatar.com/JB.svg " alt="JB" />
+                    <img className="w-40 h-auto rounded-full" src={image} alt="JB" />
                 </div>
                 <div id="content" className="prose lg:prose-xl px-2">
                     <h1 className="text-center text-gray-800 text-4xl capitalize font-medium">S. Abel Haba</h1>

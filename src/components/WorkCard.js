@@ -9,19 +9,7 @@ export function WorkCard() {
                 </div>
 
                 <details className="px-6 py-4">
-                    <summary className="font-bold text-2xl text-gray-800">Kwagei Group</summary>
-                    <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international
-                        pavilions, award-winning fireworks and seasonal special events.</p>
-                </details>
-
-                <details className="px-6 py-4">
-                    <summary className="font-bold text-2xl text-gray-800">EasyTech</summary>
-                    <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international
-                        pavilions, award-winning fireworks and seasonal special events.</p>
-                </details>
-
-                <details className="px-6 py-4">
-                    <summary className="font-bold text-2xl text-gray-800">Epcot Center</summary>
+                    <summary className="font-bold text-2xl text-gray-800">AshTECT</summary>
                     <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international
                         pavilions, award-winning fireworks and seasonal special events.</p>
                 </details>
