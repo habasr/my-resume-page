@@ -15,7 +15,7 @@ export default function App() {
     name: 'education'
   });
   return (
-    <>
+    <div className="bg-[#1C1C1C]">
       <Navbar />
 
       <div className="py-6">
@@ -31,7 +31,7 @@ export default function App() {
           </div>
         </main>
       </div>
-    </>
+    </div>
   );
 }
 
